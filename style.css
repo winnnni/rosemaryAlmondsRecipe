@@ -1,0 +1,38 @@
+body {
+
+}
+
+div {
+	outline: 1px solid #CCCCCC;	
+}
+
+/* This is the outermost idv in our content markup */
+#main-content {
+	width: 960px;
+	height: 600px;
+}
+
+.button-holder {
+	width: 200px;
+	float: left;
+	font-family: Arial, serif;
+}
+
+.button {
+	width: 60px;
+	padding: 8px;
+	margin: 4px;
+	border-width: 1px;
+	border-color: white-space: normal;
+	border-style: solid;
+	float: left;
+	text-align: center;
+}
+
+.image-holder {
+	width: 600px;
+	height: 345px;
+	border-color: none;
+	border-style: none;
+	float: left;
+}
