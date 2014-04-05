@@ -36,7 +36,7 @@ function setNav() {
 		} else if (isNext == false && index > 0) {
 			index = index - 1;
 		}
-/* as long as there is a image left, show me the next.
+/* as long as there is an image left, show me the next.
  */		
 		
 	
