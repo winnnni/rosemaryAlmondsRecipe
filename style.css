@@ -1,9 +1,11 @@
 body {
-
+	font-family: Arial;
+	font size: 20pt;
+	font color: red;
 }
 
 div {
-	outline: 1px solid #CCCCCC;	
+	outline: 1px solid white-space: normal;	
 }
 
 /* This is the outermost idv in our content markup */
@@ -31,8 +33,25 @@ div {
 
 .image-holder {
 	width: 600px;
-	height: 345px;
-	border-color: none;
-	border-style: none;
+	height: 300px;
 	float: left;
 }
+
+.ingredients {
+	width: 400px;
+	height: 300px;
+	float: left;
+	font-family: "Lucida Grande";
+	font size: 12pt;
+	line-height: 1em;	
+	display: block;
+}
+
+.direction {
+	width: 400px;
+	height: 300px;
+	float: right;
+	font-family: "Lucida Grande";
+	font size: 12pt;
+	line-height: 1em;	
+	display: block;
