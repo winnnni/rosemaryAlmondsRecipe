@@ -25,10 +25,17 @@ div {
 	padding: 8px;
 	margin: 4px;
 	border-width: 1px;
-	border-color: white-space: normal;
+	border-color: black;
 	border-style: solid;
 	float: left;
 	text-align: center;
+	cursor: pointer;
+}
+
+.disabled {
+	cursor: default;
+	border-color: gray; 
+	color: gray; 
 }
 
 .image-holder {
@@ -55,3 +62,4 @@ div {
 	font size: 12pt;
 	line-height: 1em;	
 	display: block;
+}
