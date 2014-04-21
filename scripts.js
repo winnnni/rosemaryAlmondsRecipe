@@ -15,7 +15,13 @@
 
 /* This is an array of all our images in order. */
 
-var images = ["0.jpg","1.jpg","2.jpg","3.jpg","4.jpg"];
+var steps = [
+{"images": "0.jpg","text":"Rosemary Chipotle Roasted Almonds Directions"},
+{"images": "1.jpg","text":"Preheat the oven to 350 degrees F. Brush a sheet pan generously with vegetable oil."},
+{"images": "2.jpg","text":"Combine the cashews, walnuts, pecans, almonds, 2 tablespoons of the vegetable oil, the maple syrup, brown sugar, orange juice and chipotle powder on the sheet pan; toss to coat. Add 2 tablespoons of the rosemary and 2 teaspoons of salt and toss again."},
+{"images": "3.jpg","text":"Spread the nuts in one layer. Roast for 25 minutes, stirring twice with a large metal spatula, until the nuts are glazed and golden brown. Remove from the oven and sprinkle with 2 more teaspoons of salt and the remaining 2 tablespoons of rosemary."},
+{"images": "4.jpg","text":"Taste for seasoning."}
+];
 
 
 /* index of the curent image in our images array. */
@@ -59,16 +65,18 @@ function setNav() {
 /* change the image here */
 function updateImage() {
 	
-	$(".image-holder").html("<img src='images/" + images[index] + "'/>");
+	$(".image-holder").html("<img src='images/" + steps[index].images + "'/>");
+	
 
 }
 
 /* load the first image into our iamge holder. */
 
 $(document).ready(function() {
-	$(".image-holder").html("<img src='images/" + images[index] + "'/>");
+	$(".image-holder").html("<img src='images/" + steps[index].images + "'/>");
 	$(".button.prev").addClass("disabled");
 	setNav();
+	$(".direction").html(steps[index].text);
 });
 
-console.log(images);
+console.log(steps);
