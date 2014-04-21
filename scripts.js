@@ -37,7 +37,7 @@ function setNav() {
 		
 		var isNext = $(this).hasClass("next");
 		
-		if (isNext == true && index != (images.length - 1)) {
+		if (isNext == true && index != (steps.length - 1)) {
 			index = index + 1;
 		} else if (isNext == false && index > 0) {
 			index = index - 1;
@@ -48,7 +48,7 @@ function setNav() {
 	
 		if ( index == 0) {
 			$(".button.prev").addClass("disabled");
-		} else if (index == (images.length - 1)) {
+		} else if (index == (steps.length - 1)) {
 			$(".button.next").addClass("disabled");
 		} else {
 			$(".button").removeClass("disabled");
@@ -64,6 +64,7 @@ function setNav() {
 
 /* change the image here */
 function updateImage() {
+	$(".direction").html(steps[index].text);
 	
 	$(".image-holder").html("<img src='images/" + steps[index].images + "'/>");
 	
