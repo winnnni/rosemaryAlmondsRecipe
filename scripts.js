@@ -64,7 +64,7 @@ function setNav() {
 
 /* change the image here */
 function updateImage() {
-	$(".direction").html(steps[index].text);
+	$(".direction").html("<p>"+steps[index].text+"</p>");
 	
 	$(".image-holder").html("<img src='images/" + steps[index].images + "'/>");
 	
